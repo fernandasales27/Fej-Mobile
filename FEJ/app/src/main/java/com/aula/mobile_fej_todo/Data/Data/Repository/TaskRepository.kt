@@ -1,10 +1,10 @@
 package com.aula.mobile_fej_todo.Data.Data.Repository
 
 import com.aula.mobile_fej_todo.Data.Data.API.TaskService
-import com.example.todo.data.api.TaskService
-import com.example.todo.data.model.Task
+import com.aula.mobile_fej_todo.Data.Data.Entity.Task
 
-class TaskRepository(private val api: TaskService.TaskService) {
+
+class TaskRepository(private val api: TaskService) {
         suspend fun getTasks() = api.getTasks()
         suspend fun addTask(title: String) = api.addTask(Task(title = title))
         suspend fun completeTask(id: Long) = api.completeTask(id)

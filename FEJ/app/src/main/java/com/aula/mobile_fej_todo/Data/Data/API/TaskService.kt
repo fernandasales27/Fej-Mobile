@@ -3,11 +3,6 @@ package com.aula.mobile_fej_todo.Data.Data.API
 import com.aula.mobile_fej_todo.Data.Data.Entity.Task
 import retrofit2.http.*
 
-class TaskService {
-
-
-    import com.example.todo.data.model.Task
-    import retrofit2.http.*
 
     interface TaskService {
         @GET("tasks")
@@ -23,4 +18,3 @@ class TaskService {
         suspend fun deleteTask(@Path("id") id: Long)
     }
 
-}
