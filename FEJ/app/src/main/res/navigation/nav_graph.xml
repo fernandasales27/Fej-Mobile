@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/taskListFragment">
+
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.aula.mobile_fej_todo.ui.TaskListFragment"
+        android:label="Lista de Tarefas">
+        <action
+            android:id="@+id/action_taskListFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.aula.mobile_fej_todo.ui.AddTaskFragment"
+        android:label="Nova Tarefa" />
+</navigation>
