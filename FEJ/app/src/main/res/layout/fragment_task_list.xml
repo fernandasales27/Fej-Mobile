@@ -13,7 +13,3 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
-<<<<<<< HEAD
-=======
-    nstraintlayout.widget.ConstraintLayout>
->>>>>>> 57c416827f0a9ed2b5c393fd0a555ff7d7a66399
